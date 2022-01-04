@@ -6,7 +6,7 @@
       function getRandomInt(max) {
         return Math.floor(Math.random() * max);
       }
-      function yess() {
+      function yes() {
         var random = getRandomInt(10);
         if (random <= 5) {
           var text = "ТЫ НЕ НАТУРАЛ! НЕ ПИЗДИ ПИДОРАС";
@@ -15,7 +15,7 @@
         }
         document.getElementById("status").innerHTML = text;
       }
-      function nos() {
+      function no() {
         var random = getRandomInt(10);
         if (random <= 5) {
           var text = "ТЫ НЕ ГЕЙ! ТЫ НАТУРАЛ И ТОЧКА БЛЯТЬ!!!";
@@ -29,7 +29,7 @@
   <body>
     <center>
       <a style="font-size: 50px"> ТЫ НАТУРАЛ? </a> <br>
-      <button onclick="yess()">Да</button><button onclick="nos()">Нет</button> <br>
+      <button onclick="yes()">Да</button><button onclick="no()">Нет</button> <br>
       <center><a id="status" style="font-size: 50px"></a><center>
     </center>
   </body>
