@@ -2,10 +2,35 @@
   <head>
     <meta charset="utf-8">
     <title>Секс</title>
+    <script>
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+      function yes() {
+        var random = getRandomInt(10);
+        if (random <= 5) {
+          var text = "ТЫ НЕ НАТУРАЛ! НЕ ПИЗДИ ПИДОРАС";
+        } else {
+          var text = "ЕБАТЬ ТЫ НАТУРАЛ, КРАСАВЧИК";
+        }
+        document.getElementById("status").innerHTML = text;
+      }
+      function no() {
+        var random = getRandomInt(10);
+        if (random <= 5) {
+          var text = "ТЫ НЕ ГЕЙ! ТЫ НАТУРАЛ И ТОЧКА БЛЯТЬ!!!";
+        } else {
+          var text = "ФУ БЛЯТЬ ПИДОРАС ЕБАННЫЙ ГЕЙ СУКА АХУЕТЬ ИДИ НАХУЙ ПЖ";
+        }
+        document.getElementById("status").innerHTML = text;
+      }
+    </script>
   </head>
   <body>
     <center>
-      <a style="font-size: 100px"> Я НАТУРАЛ </a>
-    </cemter>
+      <a style="font-size: 50px"> ТЫ НАТУРАЛ? </a> <br>
+      <button onclick="yes()">Да</button><button onclick="no()">Нет</button> <br>
+      <center><a id="stauts" style="font-size: 50px"></a><center>
+    </center>
   </body>
 </html>
